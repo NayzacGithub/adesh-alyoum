@@ -27,6 +27,11 @@ export default withTRPC<AppRouter>({
      */
     const url = `${getBaseUrl()}/api/trpc`;
 
+    const ONE_DAY_SECONDS = 60 * 60 * 24;
+    ctx?.res?.setHeader(
+      'Cache-Control',
+      `s-maxage=1, stale-while-revalidate=${ONE_DAY_SECONDS}`,
+    );
     return {
       url,
       transformer: superjson,
