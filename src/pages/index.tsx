@@ -32,17 +32,17 @@ const Home: NextPage = () => {
         <link rel="preconnect" href="https://flagscdn.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"></link>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-NM8WJJZDVK" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+      </Head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-NM8WJJZDVK" strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'G-NM8WJJZDVK');
         `}
-        </Script>
-      </Head>
+      </Script>
 
       <main >
         <div className="grid gap-3 p-2 mx-auto max-w-[500px]">
