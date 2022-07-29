@@ -14,4 +14,11 @@ function defineNextConfig(config) {
 
 export default defineNextConfig({
   reactStrictMode: true,
+  i18n: {
+    locales: ["ar-SA"],
+    defaultLocale: "ar-SA",
+  },
+  images: {
+    domains: ['flagcdn.com'],
+  }
 });
